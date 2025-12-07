@@ -4,6 +4,7 @@ A comprehensive business management system for Indonesian small businesses (UMKM
 
 ## 📖 Contents
 
+- [Features](#-features)
 - [Repository Structure](#-repository-structure)
 - [Components](#-components)
   - [Backend (Node.js/TypeScript)](#backend-nodejstypeScript)
@@ -20,6 +21,47 @@ A comprehensive business management system for Indonesian small businesses (UMKM
 - [Contributing](#-contributing)
 - [Support](#-support)
 - [Acknowledgments](#-acknowledgments)
+
+## 🌟 Features
+
+### Voice-Based Transaction Management
+
+Our app makes managing your business transactions as easy as speaking! Simply talk to your phone in natural Indonesian, and the app will understand and record your transactions automatically.
+
+![Voice Command Data Flow](dataflow-voice-command-feature.png)
+
+#### What You Can Do With Voice Commands:
+
+1. **Record Expenses** - Just say "Pengeluaran 50 ribu" and the app will log your expense
+2. **Track Income** - Say "Pemasukan 200 juta" to record your earnings
+3. **Manage Debts** - "Budi hutang 100 ribu" creates a debt record for Budi
+4. **Mark Debts as Paid** - "Budi lunas" clears Budi's debt automatically
+5. **Update Existing Debts** - "Andi hutang 50 ribu" adds to Andi's existing debt
+
+#### How It Works:
+
+1. **You Speak** - Press the microphone button and speak naturally in Indonesian
+2. **AI Understands** - Our smart AI analyzes your words and identifies what you want to do
+3. **Action Taken** - The app automatically records the transaction in the right category
+4. **Confirmation** - You get immediate feedback that your transaction was saved
+
+The app understands Indonesian names, common prefixes like "Pak" or "Bu", and various ways of expressing amounts ("50 ribu", "100rb", "1.5 juta").
+
+### Receipt Scanning with OCR
+
+![Receipt Scanning Data Flow](dataflow-nota-scan-feature.png)
+
+Tired of typing in receipt details? Just snap a photo!
+
+#### How It Works:
+
+1. **Take a Photo** - Point your camera at any shopping receipt
+2. **AI Reads It** - Our OCR technology extracts all the important information
+3. **Smart Categorization** - The app automatically identifies expenses and amounts
+4. **Review & Confirm** - Make any quick edits if needed, then save
+
+This feature saves you time and reduces errors when recording multiple expenses from shopping trips.
+
 
 ## 📁 Repository Structure
 
