@@ -6,7 +6,8 @@ A comprehensive business management system for Indonesian small businesses (UMKM
 
 ## 📖 Contents
 
-- [Features](#-main-features-data-flow)
+- [Main Features Data Flow](#-main-features-data-flow)
+- [Application Access & Test Credentials](#-application-access--test-credentials)
 - [Repository Structure](#-repository-structure)
 - [Components](#-components)
   - [Backend (Node.js/TypeScript)](#backend-nodejstypeScript)
@@ -63,6 +64,25 @@ Tired of typing in receipt details? Just snap a photo!
 4. **Review & Confirm** - Make any quick edits if needed, then save
 
 This feature saves you time and reduces errors when recording multiple expenses from shopping trips.
+
+## 🔗 Application Access & Test Credentials
+
+### Test Account
+Use the following credentials to test the application:
+
+- **Email**: `jagawarung@gmail.com`
+- **Password**: `12345678`
+
+> **Note**: This is a shared test account. For production use, please create your own account through the app's registration process.
+
+### Backend API
+- **Production URL (API Docs Route)**: `https://jagawarung-backend.onrender.com/api-docs/`
+- **Base URL**: `https://jagawarung-backend.onrender.com`
+- **Development URL**: `http://localhost:3000` (when running locally)
+
+### Mobile Application
+- **Download APK**: Go to [this actions](https://github.com/Juara-1/jagawarung/actions/runs/20005960856) or download [here](https://github.com/Juara-1/jagawarung/actions/runs/20005960856/artifacts/4790317848).
+- **Development Build**: Connect your device and run `flutter run` from the mobile directory
 
 
 ## 📁 Repository Structure
