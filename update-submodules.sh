@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Updating all submodules to latest main branch..."
+echo "Updating all submodules to latest main/master branch..."
 
-# Update each submodule to latest main
-git submodule foreach 'git checkout main && git pull origin main'
+# Update each submodule to latest main/master
+git submodule foreach 'git checkout main 2>/dev/null || git checkout master && git pull origin main 2>/dev/null || git pull origin master'
 
 # Commit the changes
 git add .
