@@ -1,0 +1,73 @@
+name: Update Submodules
+
+on:
+  schedule:
+    # Run daily at 11:30 PM UTC
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if within 7 days
+        id: check_date
+        run: |
+          # Set start date (current date when workflow is first enabled)
+          START_DATE="2025-12-07"
+          
+          # Get current date
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Calculate days difference
+          DAYS_DIFF=$(( ($(date -d "$CURRENT_DATE" +%s) - $(date -d "$START_DATE" +%s)) / 86400 ))
+          
+          # Check if within 7 days
+          if [ $DAYS_DIFF -lt 7 ]; then
+            echo "continue=true" >> $GITHUB_OUTPUT
+            echo "Days since start: $DAYS_DIFF"
+          else
+            echo "continue=false" >> $GITHUB_OUTPUT
+            echo "Workflow expired after 7 days"
+          fi
+      
+      - name: Checkout repository
+        if: steps.check_date.outputs.continue == 'true'
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+          submodules: recursive
+          
+      - name: Configure Git
+        if: steps.check_date.outputs.continue == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+      - name: Update submodules
+        if: steps.check_date.outputs.continue == 'true'
+        run: |
+          echo "Updating submodules to latest main branch..."
+          git submodule update --remote --merge
+          
+      - name: Check for changes
+        if: steps.check_date.outputs.continue == 'true'
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Commit and push changes
+        if: steps.check_date.outputs.continue == 'true' && steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          git add .
+          git commit -m "feat(monorepo): update submodules to latest main"
+          git push
+          
+      - name: No changes detected
+        if: steps.check_date.outputs.continue == 'true' && steps.verify-changed-files.outputs.changed == 'false'
+        run: |
+          echo "No submodule changes detected"
