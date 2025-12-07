@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/Juara-1/jagawarung-backend.git
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/Juara-1/jagawarung.git
