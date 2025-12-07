@@ -1,5 +1,7 @@
 # Jagawarung Monorepo 🏪
 
+<div align="center"><img src="jagawarung-logo.png" alt="jagawarung-logo" width="200"></div>
+
 A comprehensive business management system for Indonesian small businesses (UMKM) consisting of a Flutter mobile application with voice-first capabilities and a Node.js backend API.
 
 ## 📖 Contents
@@ -28,7 +30,7 @@ A comprehensive business management system for Indonesian small businesses (UMKM
 
 Our app makes managing your business transactions as easy as speaking! Simply talk to your phone in natural Indonesian, and the app will understand and record your transactions automatically.
 
-![Voice Command Data Flow](dataflow-voice-command-feature.png)
+<div align="center"><img src="dataflow-voice-command-feature.png" alt="Voice Command Data Flow" width="300"></div>
 
 #### What You Can Do With Voice Commands:
 
@@ -49,7 +51,7 @@ The app understands Indonesian names, common prefixes like "Pak" or "Bu", and va
 
 ### Receipt Scanning with OCR
 
-![Receipt Scanning Data Flow](dataflow-nota-scan-feature.png)
+<div align="center"><img src="dataflow-nota-scan-feature.png" alt="Receipt Scanning Data Flow" width="300"></div>
 
 Tired of typing in receipt details? Just snap a photo!
 
