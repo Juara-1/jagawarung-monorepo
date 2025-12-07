@@ -6,7 +6,7 @@ A comprehensive business management system for Indonesian small businesses (UMKM
 
 ## 📖 Contents
 
-- [Features](#-features)
+- [Features](#-main-features-data-flow)
 - [Repository Structure](#-repository-structure)
 - [Components](#-components)
   - [Backend (Node.js/TypeScript)](#backend-nodejstypeScript)
