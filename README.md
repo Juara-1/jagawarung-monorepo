@@ -12,9 +12,7 @@
   <p><a href="https://www.youtube.com/watch?v=vOHUnvoO8fE" target="_blank">📺 Watch Demo on YouTube</a></p>
 </div>
 
-<div align="center">
 [![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube)](https://youtube.com/watch?v=vOHUnvoO8fE&feature=youtu.be)
-</div>
 
 A comprehensive business management system for Indonesian small businesses (UMKM) consisting of a Flutter mobile application with voice-first capabilities and a Node.js backend API.
 
