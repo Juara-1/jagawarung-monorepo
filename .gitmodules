@@ -5,4 +5,4 @@
 [submodule "mobile"]
 	path = mobile
 	url = https://github.com/Juara-1/jagawarung.git
-	branch = main
+	branch = master
