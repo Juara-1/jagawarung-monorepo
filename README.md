@@ -2,6 +2,10 @@
 
 <div align="center"><img src="jagawarung-logo.png" alt="jagawarung-logo" width="200"></div>
 
+## 🎥 Video Demo
+
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube)](youtube.com/watch?v=vOHUnvoO8fE&feature=youtu.be)
+
 A comprehensive business management system for Indonesian small businesses (UMKM) consisting of a Flutter mobile application with voice-first capabilities and a Node.js backend API.
 
 ## 📖 Contents
