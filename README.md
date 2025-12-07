@@ -24,7 +24,7 @@ A comprehensive business management system for Indonesian small businesses (UMKM
 - [Support](#-support)
 - [Acknowledgments](#-acknowledgments)
 
-## 🌟 Features
+## 🌟 Main Features Data Flow
 
 ### Voice-Based Transaction Management
 
@@ -184,7 +184,7 @@ Run the application:
 flutter run
 ```
 
-## 📱 Key Features
+## 📱 Key Features List
 
 ### Voice-First Transaction Management
 - Siri/Assistant-like mic button for voice commands
