@@ -2,6 +2,25 @@
 
 A comprehensive business management system for Indonesian small businesses (UMKM) consisting of a Flutter mobile application with voice-first capabilities and a Node.js backend API.
 
+## 📖 Contents
+
+- [Repository Structure](#-repository-structure)
+- [Components](#-components)
+  - [Backend (Node.js/TypeScript)](#backend-nodejstypeScript)
+  - [Mobile (Flutter)](#mobile-flutter)
+- [Tech Stack](#️-tech-stack)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Backend Setup](#2-backend-setup)
+  - [Mobile Setup](#3-mobile-setup)
+- [Key Features](#️-key-features)
+- [API Endpoints](#-api-endpoints)
+- [Updating Submodules](#-updating-submodules)
+- [Development Workflow](#️-development-workflow)
+- [Contributing](#-contributing)
+- [Support](#-support)
+- [Acknowledgments](#-acknowledgments)
+
 ## 📁 Repository Structure
 
 This is a monorepo containing two main submodules:
